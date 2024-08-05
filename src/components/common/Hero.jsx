@@ -22,10 +22,10 @@ export default function Hero() {
                 with your Fav <span className="text-[#0D7DFF]">Doctors</span>
               </h2>
               <p className="mt-4 text-gray-500 text-justify">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Sapiente vel autem architecto voluptatem fugit maxime
-                necessitatibus eum optio saepe! Modi eveniet recusandae
-                consectetur maxime labore, quaerat ipsum eos possimus quod!
+              Our mission is to provide high-quality medical care to our
+                  patients. We are committed to delivering exceptional service
+                  and ensuring that our patients receive the best possible
+                  treatment.
               </p>
 
               <Button className="mt-10">Explore Now</Button>

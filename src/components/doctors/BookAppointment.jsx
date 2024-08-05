@@ -97,7 +97,7 @@ export default function BookAppointment({ id, name, address, image }) {
                         selected={date}
                         onSelect={setDate}
                         disabled={isPastDay}
-                        className="rounded-md border"
+                        className="self-center md:self-start rounded-md border"
                       />
                     </div>
                     {/* Time Slot  */}
@@ -136,7 +136,7 @@ export default function BookAppointment({ id, name, address, image }) {
                 </div>
               </DialogDescription>
             </DialogHeader>
-            <DialogFooter className="mt-5">
+            <DialogFooter className="my-5">
               <DialogClose asChild>
                 <div className="flex mr-5 items-center justify-end gap-5">
                   <Button
