@@ -1,14 +1,11 @@
-import React, { useState } from "react";
+import React from "react";
 import {
   Command,
-  CommandDialog,
   CommandEmpty,
   CommandGroup,
   CommandInput,
   CommandItem,
   CommandList,
-  CommandSeparator,
-  CommandShortcut,
 } from "../shadcn/ui/command";
 import { categoryList } from "../../data/data";
 import { Link, useLocation } from "react-router-dom";
@@ -21,10 +18,6 @@ export default function CategoryList({
   const location = useLocation();
   const params = location.pathname;
   const category = params.split("/")[2];
-
-  const handleClick = () => {
-    window.scrollTo(0, 0); // scroll to top of the page
-  };
 
   return (
     <>
@@ -44,7 +37,6 @@ export default function CategoryList({
                     <CommandItem key={index}>
                       <Link
                         to={`/search/${item.name.toLowerCase()}`}
-                        onClick={handleClick()}
                         className={`w-full p-2 flex gap-2 text-[14px] text-blue-600 items-center rounded-md cursor-pointer ${
                           category == item.name.toLowerCase() && "bg-blue-200"
                         }`}

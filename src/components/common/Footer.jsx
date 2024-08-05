@@ -1,10 +1,15 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import Logo from "/logo-nav.png";
 
 export default function Footer() {
+  const location = useLocation();
+
+  if (location.pathname.startsWith("/search")) {
+    return null;
+  }
   return (
     <>
-      <footer className="border-t">
+      <footer className="border-t relative z-50 bg-white">
         <div className="px-8 pt-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-20 lg:px-8">
           <div className="grid gap-10 row-gap-6 mb-8 sm:grid-cols-2 lg:grid-cols-4 items-center">
             <div className="sm:col-span-2 ">

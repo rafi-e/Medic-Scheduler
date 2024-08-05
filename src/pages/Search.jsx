@@ -18,10 +18,6 @@ export default function Search() {
     );
   });
 
-  useEffect(() => {
-    window.scrollTo(0, 0); // scroll to top of the page
-  }, []);
-
   if (!categories) {
     return <div>Categories not Found</div>;
   }
